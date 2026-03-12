@@ -284,3 +284,10 @@ h2.section-heading a {
   .proj-desc { grid-column: 2; }
   .exp-header { flex-direction: column; gap: 2px; }
 }
+
+@media (max-width: 925px) {
+  body {
+    font-size: 20px;
+    line-height: 1.4em;
+  }
+}
