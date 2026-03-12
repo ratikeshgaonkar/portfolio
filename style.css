@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 20px;
-  line-height: 1.8;
-  color: #1a1a1a;
-  background: #e8e8e8;
+  font-weight: 400;
+  min-width: 325px;
+  line-height: 1.4em;
+  color: #333;
+  background: #f6f6f6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,7 +55,7 @@ code {
 }
 
 .site-name {
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -70,7 +74,7 @@ code {
 }
 
 .site-nav a {
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 1.05rem;
   font-weight: 400;
   color: #c0392b;
@@ -94,7 +98,7 @@ code {
 
 /* ── Big light page title ── */
 h1.page-title {
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 3.2rem;
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -111,7 +115,7 @@ p.page-intro {
 
 /* ── Section heading ── */
 h2.section-heading {
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -212,7 +216,7 @@ h2.section-heading a {
 
 /* Italic tagline — large, elegant */
 .home-tagline {
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
   font-size: 2.4rem;
   font-style: italic;
   font-weight: 400;
@@ -233,9 +237,9 @@ h2.section-heading a {
 /* Body paragraphs — large, airy */
 .home-text p {
   font-size: 1rem;         /* 20px base */
-  color: #1a1a1a;
+  color: #333;
   margin: 0 0 1.5rem;
-  line-height: 1.82;
+  line-height: 1.4em;
 }
 .home-text p:last-child { margin-bottom: 0; }
 
