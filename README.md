@@ -1,5 +1,1 @@
-# portfolio
-
-
-
-https://github.com/ratikeshgaonkar/portfolio
+https://ratikeshgaonkar.github.io/portfolio/
