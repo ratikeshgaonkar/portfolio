@@ -30,7 +30,7 @@ code {
 
 /* ── White page card centered on grey ── */
 .page-wrap {
-  max-width: 900px;
+  max-width: 780px;
   margin: 0 auto;
   background: #fff;
   min-height: 100vh;
@@ -38,7 +38,7 @@ code {
 
 /* ── Inner content padding ── */
 .wrap {
-  padding: 0 68px;
+  padding: 0 80px;
 }
 
 /* ════════════════════════════════════
