@@ -235,11 +235,11 @@ h2.section-heading a {
 }
 
 /* Body paragraphs — large, airy */
-.home-text p {       /* 20px base */
+.home-text p {
+  font-size: 20px;
   color: #333;
   margin: 0 0 1.5rem;
   line-height: 1.4em;
-  font-size: 20px;
 }
 .home-text p:last-child { margin-bottom: 0; }
 
