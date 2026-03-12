@@ -3,8 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Ratikesh Gaonkar</title>
+  <title>Work — Ratikesh Gaonkar</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-block { margin-bottom: 3.5rem; }
+
+    /* Contact bar */
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 28px;
+      margin-bottom: 3rem;
+      font-size: 0.88rem;
+      color: #666;
+    }
+    .contact-bar a { color: #c0392b; text-decoration: underline; text-underline-offset: 2px; }
+
+    /* Summary */
+    .summary-list { list-style: disc; padding-left: 1.1rem; margin: 0; }
+    .summary-list li { font-size: 0.92rem; color: #444; margin-bottom: 6px; line-height: 1.65; }
+
+    /* Experience */
+    .exp-list { list-style: none; padding: 0; margin: 0; }
+    .exp-list > li { padding: 20px 0; border-top: 1px solid #e8e8e8; }
+    .exp-list > li:last-child { border-bottom: 1px solid #e8e8e8; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+    .exp-title { font-size: 1rem; font-weight: 700; color: #111; }
+    .exp-company { color: #c0392b; font-weight: 400; }
+    .exp-date { font-size: 0.875rem; color: #999; white-space: nowrap; flex-shrink: 0; }
+    .exp-bullets { margin: 8px 0 0 0; padding: 0 0 0 1.1rem; list-style: disc; }
+    .exp-bullets li { font-size: 0.92rem; color: #444; margin-bottom: 5px; line-height: 1.6; }
+
+    /* Education */
+    .edu-entry { padding: 16px 0; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; }
+    .edu-degree { font-size: 0.95rem; font-weight: 600; color: #111; }
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 2px; }
+    .edu-school { font-size: 0.9rem; color: #555; }
+    .edu-year { font-size: 0.875rem; color: #999; }
+
+    /* Skills */
+    .skills-list { list-style: none; padding: 0; margin: 0; }
+    .skills-list li { padding: 12px 0; border-top: 1px solid #e8e8e8; font-size: 0.92rem; color: #444; line-height: 1.6; }
+    .skills-list li:last-child { border-bottom: 1px solid #e8e8e8; }
+    .skill-label { font-weight: 700; color: #111; }
+  </style>
 </head>
 <body>
 
@@ -12,48 +54,105 @@
     <a href="index.html" class="site-name">Ratikesh Gaonkar</a>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="work.html" class="active">Projects</a>
-      <a href="research.html" style="color:#c0392b;">Research</a>
+      <a href="work.html" class="active">Work</a>
       <a href="blog.html" style="color:#c0392b;">Blog</a>
       <a href="releases.html" style="color:#c0392b;">Releases</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Personal projects</h1>
-    <p class="page-intro">This page lists some of my personal projects.</p>
+    <h1 class="page-title">Work</h1>
 
-    <h2 class="section-heading">
-      Projects on <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </h2>
+    <!-- Contact -->
+    <div class="contact-bar">
+      <span>ratikeshgaonkar23@gmail.com</span>
+      <span>7249394375</span>
+      <span>LinkedIn: <a href="https://linkedin.com/in/ratikeshgaonkar" target="_blank" rel="noopener noreferrer">ratikeshgaonkar</a></span>
+      <span>Trailblazer: <a href="https://trailblazer.salesforce.com/id/rgaonkar" target="_blank" rel="noopener noreferrer">rgaonkar</a></span>
+    </div>
 
-    <ul class="project-list">
-      <li>
-        <span class="proj-date">Jan 2026</span>
-        <span class="proj-name"><a href="#">oat</a></span>
-        <span class="proj-desc">Ultra-lightweight, zero dependency, semantic HTML, CSS, JS UI library. ~8KB</span>
-      </li>
-      <li>
-        <span class="proj-date">Jan 2026</span>
-        <span class="proj-name"><a href="#">tinyi18n-rs</a></span>
-        <span class="proj-desc">A tiny Rust i18n library that loads JSON language maps (modeled after vue-i18n)</span>
-      </li>
-      <li>
-        <span class="proj-date">Apr 2025</span>
-        <span class="proj-name"><a href="#">tinyrouter.js</a></span>
-        <span class="proj-desc">A tiny, zero-dependency lib for frontend routing and navigation on top of <code>window.history</code></span>
-      </li>
-      <li>
-        <span class="proj-date">Mar 2025</span>
-        <span class="proj-name"><a href="#">Project Four</a></span>
-        <span class="proj-desc">A lightweight utility library for handling common web development tasks.</span>
-      </li>
-      <li>
-        <span class="proj-date">Nov 2024</span>
-        <span class="proj-name"><a href="#">Project Five</a></span>
-        <span class="proj-desc">Open source experiment in browser-based data processing.</span>
-      </li>
-    </ul>
+    <!-- Experience Summary -->
+    <div class="section-block">
+      <h2 class="section-heading">Experience Summary</h2>
+      <ul class="summary-list">
+        <li>Currently working as a <strong>Salesforce and Conga Consultant</strong> at <strong>PinkSamurais Pvt Ltd.</strong></li>
+        <li>4 years of development experience building scalable and efficient Salesforce solutions.</li>
+        <li>End-to-end module development; well versed in Agile Scrum methodology.</li>
+        <li>Extensive experience in Salesforce.com setup, <strong>configuration, customization, integration, administration, and data migration</strong> using Import Wizard and Apex Data Loader.</li>
+        <li>Skilled in Apex, Visualforce, Composer API and migration tools for seamless deployment and integration.</li>
+        <li>Proficient in creating and managing <strong>Roles, Profiles, Permission Sets, Page Layouts, Record Types, Libraries, and Salesforce Flows</strong>.</li>
+        <li>Experience designing <strong>Custom Objects, Custom Components, Custom Fields, Visualforce Pages, Apex Classes, Controllers &amp; Triggers, Lightning Web Components (LWC), and AppExchange Packages.</strong></li>
+        <li>Implemented <strong>Security &amp; Sharing rules</strong> at object, field, and record levels across different org levels.</li>
+        <li>Analyzed <strong>Experience Cloud, Sales Cloud and Conga (Apttus CLM)</strong> business processes and recommended optimization strategies.</li>
+        <li><strong>Certified Platform Developer 1, Certified JavaScript Developer.</strong></li>
+      </ul>
+    </div>
+
+    <!-- Project Experience -->
+    <div class="section-block">
+      <h2 class="section-heading">Project Experience</h2>
+      <ul class="exp-list">
+
+        <li>
+          <div class="exp-header">
+            <span class="exp-title">Salesforce and Conga Consultant &mdash; <span class="exp-company">PinkSamurais Pvt Ltd</span></span>
+            <span class="exp-date">Mar 2026 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed and maintained LWC components and Apex integrations within the CLM platform, utilizing the Composer API to automate document generation and streamline contract workflows.</li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="exp-header">
+            <span class="exp-title">Senior Salesforce Developer &mdash; <span class="exp-company">Accenture</span></span>
+            <span class="exp-date">Aug 2025 – Feb 2026</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Part of the Contract Lifecycle Management (CLM) team implementing end-to-end Quote-to-Contract (Q2C) automation solutions.</li>
+            <li>Owned design and build of end-to-end features using Asynchronous Apex (Queueable, Future, Batch) and Lightning Web Components (LWC), delivering scalable CLM platform solutions.</li>
+            <li>Configured and maintained Git-based CI/CD pipelines for automated validation, deployments, and environment synchronization.</li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="exp-header">
+            <span class="exp-title">Salesforce Developer &mdash; <span class="exp-company">Cognizant</span></span>
+            <span class="exp-date">Jul 2022 – Jul 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Payment Gateway Integration with Stripe:</strong> Replaced Bluefin with real-time Stripe integration, enabling auto customer sync, payment processing, and boosting transaction reliability by 45%.</li>
+            <li>Built a QR-based child sponsorship system to streamline donor onboarding and enhance user interaction.</li>
+            <li>Automated business processes using Flows, reducing manual effort and boosting process efficiency by 20%.</li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section-block">
+      <h2 class="section-heading">Education</h2>
+      <div class="edu-entry">
+        <div class="edu-degree">B.E. (Information Technology)</div>
+        <div class="edu-row">
+          <span class="edu-school">International Institute of Information Technology</span>
+          <span class="edu-year">2022</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section-block">
+      <h2 class="section-heading">Skills</h2>
+      <ul class="skills-list">
+        <li><span class="skill-label">Languages:</span> APEX, Java, HTML/CSS, JavaScript, SQL</li>
+        <li><span class="skill-label">Salesforce:</span> Apex, Lightning Web Components (LWC), SOQL/SOSL, Visualforce, REST APIs (JSON, XML), Salesforce Experience Cloud, Salesforce Sales Cloud, SFDC Lightning</li>
+        <li><span class="skill-label">Salesforce Automation:</span> Batch Apex, Salesforce Flows, Apex Triggers, Process Builder, Conga CLM, Data Modelling, Conga Composer API</li>
+        <li><span class="skill-label">Security &amp; Administration:</span> Profiles, Roles, Permission Sets, Sharing Rules, Security Model, Governor Limits</li>
+        <li><span class="skill-label">SFDC Tools:</span> Force.com IDE, Force.com API tools (Data Loader), SFDX, VS Code, GIT, GitLab, Jira, CI/CD tools, Postman</li>
+      </ul>
+    </div>
 
     <p><a href="index.html" class="back-link">← Back</a></p>
   </main>
