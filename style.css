@@ -30,7 +30,7 @@ code {
 
 /* ── White page card centered on grey ── */
 .page-wrap {
-  max-width: 780px;
+  max-width: 680px;
   margin: 0 auto;
   background: #fff;
   min-height: 100vh;
@@ -229,8 +229,8 @@ h2.section-heading a {
 /* Two-column: text left, photo right */
 .home-body {
   display: grid;
-  grid-template-columns: 1fr 240px;
-  gap: 0 56px;
+  grid-template-columns: 1fr 200px;
+  gap: 0 40px;
   align-items: start;
 }
 
@@ -247,8 +247,8 @@ h2.section-heading a {
 .home-photo { margin-top: 6px; }
 
 .home-photo img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
