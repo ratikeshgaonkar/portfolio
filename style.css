@@ -240,6 +240,7 @@ h2.section-heading a {
   color: #333;
   margin: 0 0 1.5rem;
   line-height: 1.4em;
+  font-size: 20px;
 }
 .home-text p:last-child { margin-bottom: 0; }
 
