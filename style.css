@@ -1,201 +1,290 @@
-/* Reset and base */
-* {
-  box-sizing: border-box;
-}
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background-color: #fff;
-  color: #222;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─── HEADER / NAV ─── */
+a {
+  color: #c0392b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  background: #f5f5f5;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+/* ─── Layout wrapper ─── */
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ─── Site header ─── */
 .site-header {
+  padding: 28px 0 20px;
+  margin-bottom: 8px;
+}
+
+.site-header .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 32px 40px 24px;
-  border-bottom: none;
 }
 
-.site-name {
-  font-size: 1.35rem;
+.site-logo {
+  display: block;
+  line-height: 1;
+}
+
+.site-logo img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+/* Fallback text logo when no image */
+.site-logo-text {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #111;
   text-decoration: none;
   letter-spacing: -0.01em;
 }
+.site-logo-text:hover { text-decoration: none; color: #111; }
 
+/* ─── Main nav ─── */
 .site-nav {
   display: flex;
-  gap: 28px;
-  align-items: center;
+  gap: 24px;
 }
 
 .site-nav a {
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 0.92rem;
   font-family: Georgia, serif;
   color: #111;
   text-decoration: none;
-  letter-spacing: 0.01em;
+  font-weight: 400;
 }
 
-.site-nav a.active,
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a.active {
   color: #c0392b;
 }
 
-/* Active nav item is bold */
-.site-nav a.active {
-  font-weight: 700;
+/* ─── Page content ─── */
+.page-content {
+  padding: 48px 0 80px;
 }
 
-/* ─── MAIN CONTENT ─── */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 60px 40px 100px;
-}
-
-/* ─── PAGE TITLE ─── */
-h1.page-title {
-  font-size: 2.75rem;
+/* ─── Typography ─── */
+h1 {
+  font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.4rem 0;
   line-height: 1.15;
+  color: #111;
 }
 
-.page-intro {
-  font-size: 1rem;
-  color: #555;
-  margin: 0 0 3rem 0;
-}
-
-/* ─── SECTION HEADING ─── */
-h2.section-heading {
-  font-size: 2rem;
+h2 {
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: -0.02em;
-  margin: 0 0 1.5rem 0;
+  margin: 2.5rem 0 1rem 0;
+  color: #111;
 }
 
-h2.section-heading a {
+h2 a {
   color: #c0392b;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-/* ─── PROJECT LIST ─── */
-.project-list {
+p {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ─── GitHub project list (3-col grid) ─── */
+.gh-list {
   list-style: none;
   padding: 0;
   margin: 0 0 3rem 0;
 }
 
-.project-list li {
+.gh-list li {
   display: grid;
-  grid-template-columns: 120px 180px 1fr;
-  gap: 0 12px;
-  padding: 14px 0;
-  border-top: 1px solid #e8e8e8;
+  grid-template-columns: 90px 160px 1fr;
+  gap: 0 0;
+  padding: 11px 0;
+  border-top: 1px solid #ebebeb;
   align-items: start;
 }
 
-.project-list li:last-child {
-  border-bottom: 1px solid #e8e8e8;
+.gh-list li:last-child {
+  border-bottom: 1px solid #ebebeb;
 }
 
-.proj-date {
-  font-size: 0.9rem;
-  color: #999;
+.gh-date {
+  font-size: 0.85rem;
+  color: #aaa;
   padding-top: 1px;
+  white-space: nowrap;
 }
 
-.proj-name a {
+.gh-name a {
+  font-size: 0.9rem;
   color: #c0392b;
   text-decoration: underline;
-  text-underline-offset: 3px;
-  font-size: 0.95rem;
+  text-underline-offset: 2px;
 }
 
-.proj-name a:hover {
-  color: #96281b;
+.gh-name a:hover { color: #96281b; }
+
+.gh-desc {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.55;
 }
 
-.proj-desc {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.6;
+/* ─── Work / experience sections ─── */
+.section-block {
+  margin-bottom: 3.2rem;
 }
 
-/* ─── HOME PAGE ─── */
+/* Contact bar */
+.contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+  color: #777;
+  font-family: Georgia, serif;
+}
+.contact-bar a { color: #c0392b; }
+
+/* Summary bullets */
+.summary-list {
+  list-style: disc;
+  padding-left: 1.15rem;
+  margin: 0;
+}
+.summary-list li {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 5px;
+  line-height: 1.65;
+}
+
+/* Experience entries */
+.exp-list { list-style: none; padding: 0; margin: 0; }
+.exp-list > li { padding: 18px 0; border-top: 1px solid #ebebeb; }
+.exp-list > li:last-child { border-bottom: 1px solid #ebebeb; }
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.exp-title { font-size: 0.95rem; font-weight: 700; color: #111; }
+.exp-company { color: #c0392b; font-weight: 400; }
+.exp-date { font-size: 0.82rem; color: #aaa; white-space: nowrap; flex-shrink: 0; }
+
+.exp-bullets { margin: 6px 0 0 0; padding: 0 0 0 1.1rem; list-style: disc; }
+.exp-bullets li { font-size: 0.88rem; color: #555; margin-bottom: 4px; line-height: 1.6; }
+
+/* Education */
+.edu-entry { padding: 14px 0; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+.edu-degree { font-size: 0.92rem; font-weight: 600; color: #111; }
+.edu-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 2px; }
+.edu-school { font-size: 0.88rem; color: #666; }
+.edu-year { font-size: 0.82rem; color: #aaa; }
+
+/* Skills */
+.skills-list { list-style: none; padding: 0; margin: 0; }
+.skills-list li { padding: 10px 0; border-top: 1px solid #ebebeb; font-size: 0.88rem; color: #555; line-height: 1.6; }
+.skills-list li:last-child { border-bottom: 1px solid #ebebeb; }
+.skill-label { font-weight: 700; color: #111; }
+
+/* ─── Home page ─── */
 .home-name {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: -0.02em;
-  margin: 0 0 1rem 0;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.8rem 0;
+  color: #111;
 }
 
 .home-subtitle {
-  font-size: 1.05rem;
-  color: #444;
-  max-width: 540px;
-  margin: 0 0 2.5rem 0;
+  font-size: 0.95rem;
+  color: #666;
+  max-width: 500px;
+  margin: 0 0 2rem 0;
+  line-height: 1.7;
 }
 
 .home-nav {
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
 
 .home-nav a {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #111;
   text-decoration: none;
 }
 
-.home-nav a:hover {
-  text-decoration: underline;
+.home-nav a:hover { text-decoration: underline; }
+
+/* ─── Back link ─── */
+.back-link { font-size: 0.88rem; color: #888; }
+.back-link:hover { color: #333; text-decoration: underline; }
+
+/* ─── Footer ─── */
+.site-footer {
+  border-top: 1px solid #ebebeb;
+  padding: 20px 0 32px;
+  font-size: 0.8rem;
+  color: #bbb;
 }
 
-/* ─── BACK LINK ─── */
-.back-link {
-  color: #222;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  .wrap { padding: 0 18px; }
 
-.back-link:hover {
-  text-decoration: underline;
-}
+  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 10px; }
 
-/* ─── RESPONSIVE ─── */
-@media (max-width: 640px) {
-  .site-header {
-    padding: 24px 20px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
+  h1, .home-name { font-size: 1.9rem; }
+  h2 { font-size: 1.25rem; }
 
-  .container {
-    padding: 40px 20px 60px;
-  }
-
-  .project-list li {
-    grid-template-columns: 90px 1fr;
+  .gh-list li {
+    grid-template-columns: 75px 1fr;
     grid-template-rows: auto auto;
   }
+  .gh-desc { grid-column: 2; }
 
-  .proj-desc {
-    grid-column: 2;
-  }
+  .exp-header { flex-direction: column; gap: 2px; }
 }
