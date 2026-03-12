@@ -8,7 +8,6 @@
   <style>
     /* ── Home-page specific ── */
 
-    /* Large italic tagline */
     .home-tagline {
       font-size: 2.35rem;
       font-style: italic;
@@ -22,54 +21,59 @@
     /* Two-column: text left, photo right */
     .home-body {
       display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 0 60px;
+      grid-template-columns: 1fr 240px;
+      gap: 0 56px;
       align-items: start;
     }
 
     .home-text p {
-      font-size: 1.05rem;
-      color: #222;
-      margin: 0 0 1.3rem;
-      line-height: 1.75;
+      font-size: 1rem;
+      color: #333;
+      margin: 0 0 1.4rem;
+      line-height: 1.4em;
     }
-
     .home-text p:last-child { margin-bottom: 0; }
 
-    /* Circular photo */
-    .home-photo {
-      margin-top: 8px;
+    /* Project experience list — orange bullets, link name then dash description */
+    .home-text ul.proj-exp {
+      list-style: disc;
+      padding: 0 0 0 1.2rem;
+      margin: 0.4rem 0 0 0;
     }
 
+    .home-text ul.proj-exp li {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.4em;
+      margin-bottom: 1rem;
+    }
+
+    .home-text ul.proj-exp li::marker {
+      color: #c0392b;
+    }
+
+    .home-text ul.proj-exp li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Circular photo */
+    .home-photo { margin-top: 8px; }
+
     .home-photo img {
-      width: 100%;
-      max-width: 280px;
-      aspect-ratio: 1;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
       object-fit: cover;
+      object-position: center 20%;
       display: block;
       filter: grayscale(100%);
     }
 
-    /* Placeholder circle when no photo */
-    .home-photo-placeholder {
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      background: #e8e8e8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #bbb;
-      font-size: 0.85rem;
-      font-style: italic;
-    }
-
     @media (max-width: 700px) {
-      .home-tagline { font-size: 1.6rem; margin: 36px 0 32px; }
+      .home-tagline { font-size: 1.6rem; margin-bottom: 32px; }
       .home-body { grid-template-columns: 1fr; }
       .home-photo { order: -1; margin-bottom: 28px; }
-      .home-photo-placeholder, .home-photo img { width: 160px; height: 160px; max-width: 160px; }
+      .home-photo img { width: 160px; height: 160px; }
     }
   </style>
 </head>
@@ -82,8 +86,6 @@
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="work.html">Work</a>
-        <a href="blog.html">Blog</a>
-        <a href="releases.html">Releases</a>
       </nav>
     </div>
   </header>
@@ -91,33 +93,53 @@
   <main class="page-content">
     <div class="wrap">
 
-      <!-- Italic tagline -->
       <p class="home-tagline">Developer&thinsp;/&thinsp;Tinkerer&thinsp;/&thinsp;Builder</p>
 
-      <!-- Text + photo -->
       <div class="home-body">
 
         <div class="home-text">
+
           <p>I am a Salesforce developer and a tinkerer.</p>
 
           <p>
-            I completed my B.E. in Information Technology from the International
-            Institute of Information Technology in 2022, where I developed a strong
-            foundation in software development and problem solving.
+            I studied Information Technology at the International Institute of
+            Information Technology, Pune, from where I obtained a B.E. in 2022.
+          </p>
+
+          <p>
+            In 2022, I started my career at <a href="https://www.cognizant.com/in/en" target="_blank" rel="noopener noreferrer">Cognizant</a> as a
+            Salesforce Developer, building payment integrations, automating business
+            processes, and delivering scalable solutions for enterprise clients. In 2025,
+            I joined <a href="https://www.accenture.com/in-en/insights/strategy/reinvented-with-accenture" target="_blank" rel="noopener noreferrer">Accenture</a> as a Senior Salesforce Developer,
+            working on Contract Lifecycle Management and Quote-to-Contract automation.
           </p>
 
           <p>
             I currently work as a <strong>Salesforce and Conga Consultant</strong> at
-            PinkSamurais Pvt Ltd, having previously worked at
-            <a href="#">Accenture</a> and <a href="#">Cognizant</a>,
-            building scalable CLM and automation solutions on the Salesforce platform.
+            <a href="https://pinksamurais.com/" target="_blank" rel="noopener noreferrer">PinkSamurais Pvt Ltd</a>, where I build LWC components
+            and Apex integrations to automate contract workflows on the CLM platform.
           </p>
 
           <p>
             I am a <strong>Certified Platform Developer 1</strong> and a
-            <strong>Certified JavaScript Developer</strong>. Outside of work I enjoy
+            <strong>Certified JavaScript Developer</strong>. Outside of work, I enjoy
             experimenting with new technologies and building small, useful tools.
           </p>
+
+          <p>I have worked on the following projects:</p>
+
+          <ul class="proj-exp">
+            <li>
+              <a href="https://pinksamurais.com/" target="_blank" rel="noopener noreferrer">PinkSamurais Pvt Ltd</a> — started in Mar 2026 to develop and maintain LWC components and Apex integrations within the CLM platform, utilizing the Composer API to automate document generation and streamline contract workflows.
+            </li>
+            <li>
+              <a href="https://www.accenture.com/in-en/insights/strategy/reinvented-with-accenture" target="_blank" rel="noopener noreferrer">Accenture</a> — joined in Aug 2025 as a Senior Salesforce Developer, working on Contract Lifecycle Management and end-to-end Quote-to-Contract automation using Asynchronous Apex, LWC, and Git-based CI/CD pipelines.
+            </li>
+            <li>
+              <a href="https://www.cognizant.com/in/en" target="_blank" rel="noopener noreferrer">Cognizant</a> — started in Jul 2022 as a Salesforce Developer, replacing Bluefin with real-time Stripe integration, building a QR-based child sponsorship system, and automating business processes using Flows.
+            </li>
+          </ul>
+
         </div>
 
         <div class="home-photo">
