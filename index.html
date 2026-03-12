@@ -1,260 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ratikesh Gaonkar</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    html { scroll-behavior: smooth; }
-
-    /* ── Tagline ── */
-    .home-tagline {
-      font-size: 2.35rem;
-      font-style: italic;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      color: #111;
-      margin: 0 0 40px;
-      line-height: 1.2;
-    }
-
-    /* ── Two-column: text left, photo right ── */
-    .home-body {
-      display: grid;
-      grid-template-columns: 1fr 200px;
-      gap: 0 56px;
-      align-items: start;
-    }
-
-    .home-text p {
-      font-size: 20px;
-      color: #333;
-      margin: 0 0 1.5rem;
-      line-height: 1.4em;
-    }
-    .home-text p:last-child { margin-bottom: 0; }
-
-    /* ── Project bullets ── */
-    .home-text ul.proj-exp {
-      list-style: disc;
-      padding: 0 0 0 1.2rem;
-      margin: 0.4rem 0 0 0;
-    }
-    .home-text ul.proj-exp li {
-      font-size: 20px;
-      color: #333;
-      line-height: 1.4em;
-      margin-bottom: 1rem;
-    }
-    .home-text ul.proj-exp li::marker { color: #c0392b; }
-    .home-text ul.proj-exp li:last-child { margin-bottom: 0; }
-
-    /* ── Circular photo ── */
-    .home-photo { margin-top: 8px; }
-    .home-photo img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center 20%;
-      display: block;
-      filter: grayscale(100%);
-    }
-
-    /* ── Work section divider ── */
-    .work-section {
-      margin-top: 72px;
-      padding-top: 48px;
-      border-top: 1px solid #e4e4e4;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 700px) {
-      .home-tagline { font-size: 1.6rem; margin-bottom: 32px; }
-      .home-body { grid-template-columns: 1fr; }
-      .home-photo { order: -1; margin-bottom: 28px; }
-      .home-photo img { width: 160px; height: 160px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Garg - Lead Salesforce Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="page-wrap">
-
-  <header class="site-header">
-    <div class="wrap">
-      <a href="#" class="site-name">Ratikesh Gaonkar</a>
-      <nav class="site-nav">
-        <a href="#">Home</a>
-        <a href="#work">Work</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-content">
-    <div class="wrap">
-
-      <!-- ── HOME ── -->
-      <p class="home-tagline">Salesforce Developer&thinsp;/&thinsp;Hiker</p>
-
-      <div class="home-body">
-        <div class="home-text">
-
-          <p>I push within governor limits. On trails, I push past them.</p>
-
-          <p>
-            I studied Information Technology at the International Institute of
-            Information Technology, Pune, from where I obtained a B.E. in 2022.
-          </p>
-
-          <p>
-            In 2022, I started my career at <a href="https://www.cognizant.com/in/en" target="_blank" rel="noopener noreferrer">Cognizant</a> as a
-            Salesforce Developer, building payment integrations, automating business
-            processes, and delivering scalable solutions for enterprise clients. In 2025,
-            I joined <a href="https://www.accenture.com/in-en/insights/strategy/reinvented-with-accenture" target="_blank" rel="noopener noreferrer">Accenture</a> as a Senior Salesforce Developer,
-            working on Contract Lifecycle Management and Quote-to-Contract automation.
-          </p>
-
-          <p>
-            I currently work as a <strong>Salesforce and Conga Consultant</strong> at
-            <a href="https://pinksamurais.com/" target="_blank" rel="noopener noreferrer">PinkSamurais Pvt Ltd</a>, where I build LWC components
-            and Apex integrations to automate contract workflows on the CLM platform.
-          </p>
-
-          <p>
-            I am a <strong>Certified Platform Developer 1</strong> and a
-            <strong>Certified JavaScript Developer</strong>. Outside of work, I enjoy
-            experimenting with new technologies and building small, useful tools.
-          </p>
-
-          <p>I have worked on the following projects:</p>
-
-          <ul class="proj-exp">
-            <li>
-              <a href="https://pinksamurais.com/" target="_blank" rel="noopener noreferrer">PinkSamurais Pvt Ltd</a> — started in Mar 2026 to develop and maintain LWC components and Apex integrations within the CLM platform, utilizing the Composer API to automate document generation and streamline contract workflows.
-            </li>
-            <li>
-              <a href="https://www.accenture.com/in-en/insights/strategy/reinvented-with-accenture" target="_blank" rel="noopener noreferrer">Accenture</a> — joined in Aug 2025 as a Senior Salesforce Developer, working on Contract Lifecycle Management and end-to-end Quote-to-Contract automation using Asynchronous Apex, LWC, and Git-based CI/CD pipelines.
-            </li>
-            <li>
-              <a href="https://www.cognizant.com/in/en" target="_blank" rel="noopener noreferrer">Cognizant</a> — started in Jul 2022 as a Salesforce Developer, replacing Bluefin with real-time Stripe integration, building a QR-based child sponsorship system, and automating business processes using Flows.
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="home-photo">
-          <img src="photo.jpeg" alt="Ratikesh Gaonkar" />
-        </div>
-      </div>
-
-      <!-- ── WORK SECTION ── -->
-      <div id="work" class="work-section">
-
-        <h1 class="page-title">Work</h1>
-        <p class="page-intro">Salesforce consultant, developer, and builder.</p>
-
-        <!-- Contact -->
-        <div class="contact-bar">
-          <span>ratikeshgaonkar23@gmail.com</span>
-          <span>7249394375</span>
-          <span>LinkedIn: <a href="https://linkedin.com/in/ratikeshgaonkar" target="_blank" rel="noopener noreferrer">ratikeshgaonkar</a></span>
-          <span>Trailblazer: <a href="https://trailblazer.salesforce.com/id/rgaonkar" target="_blank" rel="noopener noreferrer">rgaonkar</a></span>
-        </div>
-
-        <!-- Experience Summary -->
-        <div class="section-block">
-          <h2 class="section-heading">Experience Summary</h2>
-          <ul class="summary-list">
-            <li>Currently working as a <strong>Salesforce and Conga Consultant</strong> at <strong>PinkSamurais Pvt Ltd.</strong></li>
-            <li>4 years of development experience building scalable and efficient Salesforce solutions.</li>
-            <li>End-to-end module development; well versed in Agile Scrum methodology.</li>
-            <li>Extensive experience in Salesforce.com <strong>configuration, customization, integration, administration, and data migration</strong> using Import Wizard and Apex Data Loader.</li>
-            <li>Skilled in Apex, Visualforce, Composer API and migration tools for seamless deployment and integration.</li>
-            <li>Proficient in creating and managing <strong>Roles, Profiles, Permission Sets, Page Layouts, Record Types, Libraries, and Salesforce Flows</strong>.</li>
-            <li>Experience designing <strong>Custom Objects, Custom Components, Visualforce Pages, Apex Classes, Controllers &amp; Triggers, Lightning Web Components (LWC), and AppExchange Packages.</strong></li>
-            <li>Implemented <strong>Security &amp; Sharing rules</strong> at object, field, and record levels across different org levels.</li>
-            <li>Analyzed <strong>Experience Cloud, Sales Cloud and Conga (Apttus CLM)</strong> business processes and recommended optimization strategies.</li>
-            <li><strong>Certified Platform Developer 1 · Certified JavaScript Developer.</strong></li>
-          </ul>
-        </div>
-
-        <!-- Project Experience -->
-        <div class="section-block">
-          <h2 class="section-heading">Project Experience</h2>
-          <ul class="exp-list">
-
-            <li>
-              <div class="exp-header">
-                <span class="exp-title">Salesforce and Conga Consultant &mdash; <span class="exp-company">PinkSamurais Pvt Ltd</span></span>
-                <span class="exp-date">Mar 2026 – Present</span>
-              </div>
-              <ul class="exp-bullets">
-                <li>Developed and maintained LWC components and Apex integrations within the CLM platform, utilizing the Composer API to automate document generation and streamline contract workflows.</li>
-              </ul>
-            </li>
-
-            <li>
-              <div class="exp-header">
-                <span class="exp-title">Senior Salesforce Developer &mdash; <span class="exp-company">Accenture</span></span>
-                <span class="exp-date">Aug 2025 – Feb 2026</span>
-              </div>
-              <ul class="exp-bullets">
-                <li>Part of the Contract Lifecycle Management (CLM) team implementing end-to-end Quote-to-Contract (Q2C) automation solutions.</li>
-                <li>Designed and built end-to-end features using Asynchronous Apex (Queueable, Future, Batch) and Lightning Web Components (LWC).</li>
-                <li>Configured and maintained Git-based CI/CD pipelines for automated validation, deployments, and environment synchronization.</li>
-              </ul>
-            </li>
-
-            <li>
-              <div class="exp-header">
-                <span class="exp-title">Salesforce Developer &mdash; <span class="exp-company">Cognizant</span></span>
-                <span class="exp-date">Jul 2022 – Jul 2025</span>
-              </div>
-              <ul class="exp-bullets">
-                <li><strong>Payment Gateway Integration with Stripe:</strong> Replaced Bluefin with real-time Stripe integration, enabling auto customer sync, payment processing, and boosting transaction reliability by 45%.</li>
-                <li>Built a QR-based child sponsorship system to streamline donor onboarding and enhance user interaction.</li>
-                <li>Automated business processes using Flows, reducing manual effort and boosting process efficiency by 20%.</li>
-              </ul>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- Education -->
-        <div class="section-block">
-          <h2 class="section-heading">Education</h2>
-          <div class="edu-entry">
-            <div class="edu-degree">B.E. (Information Technology)</div>
-            <div class="edu-row">
-              <span class="edu-school">International Institute of Information Technology</span>
-              <span class="edu-year">2022</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ayush Garg</h2>
+                <span>Lead Salesforce Developer</span>
             </div>
-          </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-        <!-- Skills -->
-        <div class="section-block">
-          <h2 class="section-heading">Skills</h2>
-          <ul class="skills-list">
-            <li><span class="skill-label">Languages:</span> APEX, Java, HTML/CSS, JavaScript, SQL</li>
-            <li><span class="skill-label">Salesforce:</span> Apex, Lightning Web Components (LWC), SOQL/SOSL, Visualforce, REST APIs (JSON, XML), Experience Cloud, Sales Cloud, SFDC Lightning</li>
-            <li><span class="skill-label">Salesforce Automation:</span> Batch Apex, Salesforce Flows, Apex Triggers, Process Builder, Conga CLM, Data Modelling, Conga Composer API</li>
-            <li><span class="skill-label">Security &amp; Administration:</span> Profiles, Roles, Permission Sets, Sharing Rules, Security Model, Governor Limits</li>
-            <li><span class="skill-label">SFDC Tools:</span> Force.com IDE, Data Loader, SFDX, VS Code, GIT, GitLab, Jira, CI/CD tools, Postman</li>
-          </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Ayush Garg</span>
+                </h1>
+                <h2 class="hero-subtitle">Lead Salesforce Developer</h2>
+                <p class="hero-description">
+                    6X Certified Salesforce Developer with 9+ years of experience, passionate about learning new 
+                    technologies. Currently working as a Senior Salesforce Engineer at Uber.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gargayush1994@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-8510035969</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/ayush-garg-6a1310123" target="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="profile-photo.jpg" alt="Ayush Garg - Lead Salesforce Developer" class="profile-photo">
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-      <!-- end #work -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a Lead Salesforce Developer with 9+ years of comprehensive experience, I specialize in 
+                        building robust, scalable solutions on the Salesforce platform. My expertise spans across 
+                        Salesforce development, administration, and integration with external systems.
+                    </p>
+                    <p>
+                        I have a proven track record of leading development teams, implementing complex business 
+                        requirements, and optimizing Salesforce implementations for enhanced user experience and 
+                        operational efficiency.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>6X Salesforce Certified</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>9+ Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Salesforce Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-  </main>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Salesforce Engineer (L4)</h3>
+                        <h4>Uber</h4>
+                        <span class="timeline-date">Oct 2024 - Present</span>
+                        <span class="timeline-location">Bangalore, India</span>
+                        <p class="role-summary">Focus on enhancing the CPQ (Configure Price Quote) platform to support global pricing and approval workflows through scalable, automation-first solutions.</p>
+                        <ul>
+                            <li><strong>Approval Matrix Framework:</strong> Built a dynamic, custom object-based approval logic engine for CPQ pricing workflows. Enabled threshold management via configuration—no code changes required. Enabled rapid scaling to new geographies.</li>
+                            <li><strong>Approver Stamping & Routing:</strong> Automated L1/L2/Deal Desk approver population with intelligent fallback logic for inactive users. Integrated closely with approval rules for consistent and accurate routing.</li>
+                            <li><strong>Pricing Push Incident Resolution:</strong> Resolved a critical CPQ integration failure impacting the EMEA rollout. Diagnosed logic failure in Salesforce triggers, implemented a robust fix, and restored system stability. Publicly recognized by leadership for ownership and turnaround.</li>
+                            <li><strong>BRN Validation Framework:</strong> Developed a country-agnostic, metadata-driven engine for validating Business Registration Numbers using patterns, algorithms, and live APIs (e.g., NZBN). <span class="highlight-metric">Reduced new-country setup time by 70%.</span></li>
+                            <li><strong>UI/UX Enhancements:</strong> Added profitability toggle (USD vs local currency) and submission comment capture to improve transparency and decision-making in quote approvals.</li>
+                            <li><strong>Error Reduction Initiative:</strong> Analyzed system logs to surface high-frequency errors. Documented reproducible issues and worked with platform teams to fix them proactively.</li>
+                        </ul>
+                        <div class="technologies">
+                            <strong>Tools & Technologies:</strong> Apex, LWC, Custom Metadata, DML/SOQL, Platform Events, Salesforce CPQ, REST Integrations
+                        </div>
+                    </div>
+                </div>
 
-  <footer class="site-footer">
-    <div class="wrap">Ratikesh Gaonkar</div>
-  </footer>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Data Engineer / Lead Salesforce Developer</h3>
+                        <h4>Walmart Global Tech India</h4>
+                        <span class="timeline-date">Mar 2021 - Oct 2024</span>
+                        <span class="timeline-location">Bangalore, India</span>
+                        <p class="role-summary">Led key Salesforce engineering initiatives across support automation and advertiser onboarding in a global retail environment.</p>
+                        <ul>
+                            <li><strong>Salesforce Case Portal:</strong> Designed and launched a comprehensive portal, streamlining global support case management across multiple teams and regions.</li>
+                            <li><strong>Advertiser Onboarding Automation:</strong> <span class="highlight-metric">Reduced average processing time from 38 minutes to 8 minutes (30 minutes saved per account)</span> through intelligent workflow automation and data validation.</li>
+                            <li><strong>Single Sign-On Integration:</strong> Integrated SSO into the portal, improving user experience and security posture across the platform.</li>
+                            <li><strong>Sandbox Refresh Automation:</strong> Piloted automated sandbox refresh processes, <span class="highlight-metric">reducing manual admin work by 70%</span> and improving development efficiency.</li>
+                        </ul>
+                        <div class="technologies">
+                            <strong>Tools & Technologies:</strong> Apex, LWC, REST APIs, SSO (SAML/OAuth), Data Loader, Batch Jobs
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Salesforce Developer</h3>
+                        <h4>Preqin</h4>
+                        <span class="timeline-date">Sep 2020 - Mar 2021</span>
+                        <span class="timeline-location">Bangalore, India</span>
+                        <p class="role-summary">Worked on Salesforce platform enhancements and cross-system integrations for a global fintech firm.</p>
+                        <ul>
+                            <li><strong>Platform Development:</strong> Developed Apex services and LWC components for internal applications, maximizing product functionality and user experience.</li>
+                            <li><strong>Identity Server SSO:</strong> Implemented Identity Server-based Single Sign-On, enhancing login security and user experience across the platform.</li>
+                            <li><strong>ETL Pipeline Creation:</strong> Created Talend ETL pipelines to sync data between SQL Server and Salesforce, improving data availability and consistency.</li>
+                        </ul>
+                        <div class="technologies">
+                            <strong>Tools & Technologies:</strong> Apex, LWC, Talend, Identity Server, SOQL, SQL Server
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Salesforce Developer</h3>
+                        <h4>Deloitte</h4>
+                        <span class="timeline-date">Apr 2019 - Sep 2020</span>
+                        <span class="timeline-location">Pune, India</span>
+                        <p class="role-summary">Delivered intelligent and integrated Salesforce solutions for global financial services clients.</p>
+                        <ul>
+                            <li><strong>Digital Banking Platform:</strong> Built a comprehensive platform using Community Cloud to centralize service access for banking customers.</li>
+                            <li><strong>Einstein AI Integration:</strong> Integrated Einstein Intent & Sentiment Analysis to auto-categorize support cases, reducing manual triage and improving response times.</li>
+                            <li><strong>Einstein Chatbots:</strong> Developed intelligent chatbots tailored for different business units, enhancing customer self-service capabilities.</li>
+                            <li><strong>Enterprise Integrations:</strong> Integrated Salesforce with third-party systems including IBM API Connect, Ping Federate, Finacle, and Bing News API for comprehensive data flow.</li>
+                        </ul>
+                        <div class="technologies">
+                            <strong>Tools & Technologies:</strong> Apex, Community Cloud, Einstein AI, LWC, REST Integrations, Ping, Finacle, Microsoft APIs
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Salesforce Developer</h3>
+                        <h4>Wipro</h4>
+                        <span class="timeline-date">Jun 2016 - Apr 2019</span>
+                        <span class="timeline-location">Pune, India</span>
+                        <p class="role-summary">Contributed to large-scale Salesforce implementations across industries.</p>
+                        <ul>
+                            <li><strong>Core Platform Development:</strong> Developed Apex classes, complex SOQL queries, and reusable Lightning components (e.g., Global Search) for enhanced user experience.</li>
+                            <li><strong>REST API Integration:</strong> Integrated with SmartPath using REST APIs to streamline business workflows and improve data synchronization.</li>
+                            <li><strong>Multi-Client Collaboration:</strong> Collaborated on core platform enhancements across multiple client orgs, ensuring consistency and best practices.</li>
+                        </ul>
+                        <div class="technologies">
+                            <strong>Tools & Technologies:</strong> Apex, Aura Components, SOQL/SOSL, REST APIs, Lightning Design System
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Salesforce Platform</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Salesforce / Force.com</span>
+                        <span class="skill-tag">Lightning Web Components (LWC)</span>
+                        <span class="skill-tag">Aura Framework</span>
+                        <span class="skill-tag">Salesforce Digital Experiences</span>
+                        <span class="skill-tag">Custom Metadata Types</span>
+                        <span class="skill-tag">Platform Events</span>
+                        <span class="skill-tag">Salesforce Administration</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apex</span>
+                        <span class="skill-tag">Apex Triggers</span>
+                        <span class="skill-tag">Batch Apex</span>
+                        <span class="skill-tag">SOQL/SOSL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">SOAP APIs</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Automation & Config</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Process Builder</span>
+                        <span class="skill-tag">Flow Builder</span>
+                        <span class="skill-tag">Reports & Dashboards</span>
+                        <span class="skill-tag">Data Loader</span>
+                        <span class="skill-tag">Single Sign-On (SSO)</span>
+                        <span class="skill-tag">SAML/OAuth</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Integration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Einstein Chatbots</span>
+                        <span class="skill-tag">Einstein Intent Analysis</span>
+                        <span class="skill-tag">Einstein Sentiment Analysis</span>
+                        <span class="skill-tag">Einstein Language APIs</span>
+                        <span class="skill-tag">Google DialogFlow</span>
+                        <span class="skill-tag">REST Integrations</span>
+                        <span class="skill-tag">JSON/XML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Voice Assisted Reporting</h3>
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <p>Developed a Google Assistant Chatbot to display incoming customer complaints, enhancing user experience through voice interaction.</p>
+                    <ul>
+                        <li>Created a Rest Service interface in Salesforce for receiving input from Google Assistant</li>
+                        <li>Facilitating seamless communication</li>
+                        <li>Utilizes advanced web component to display the report as a chart</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Case Creation via WhatsApp</h3>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <p>Developed a proof of concept to integrate WhatsApp with Salesforce using the Twilio API, enabling efficient case management.</p>
+                    <ul>
+                        <li>Allows customers to report issues via WhatsApp messages</li>
+                        <li>Messages are converted into cases in Salesforce, streamlining the process</li>
+                        <li>Enabled communication between agents and customers via WhatsApp case comments</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Weather Chatbot</h3>
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <p>This is an Einstein chatbot which tells you the weather of your desired city.</p>
+                    <ul>
+                        <li>The chatbot uses IBM weather API to get the weather</li>
+                        <li>Display it on the chat window</li>
+                        <li>Integrated with Salesforce Einstein Bot platform</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="education-grid">
+                <div class="education-section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <h3>Bachelor of Technology (Information Technology)</h3>
+                        <h4>Galgotias College of Engineering and Technology</h4>
+                        <span class="education-date">08/2012 - 06/2016</span>
+                        <span class="education-location">Greater Noida</span>
+                    </div>
+                </div>
+                
+                <div class="certification-section">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="certification-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>Salesforce Certified Admin</h4>
+                            <h4>Platform Developer I</h4>
+                            <h4>Platform Developer II</h4>
+                            <h4>App Builder</h4>
+                            <h4>Experience Builder</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about Salesforce development.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:gargayush1994@gmail.com">gargayush1994@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+918510035969">+91-8510035969</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/ayush-garg-6a1310123" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Bangalore, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/xrblpwzq" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="_subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://gargayush1994.github.io/salesforce-portfolio/#contact">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Ayush Garg</h3>
+                    <p>Lead Salesforce Developer</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/ayush-garg-6a1310123" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:gargayush1994@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+918510035969">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ayush Garg. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
