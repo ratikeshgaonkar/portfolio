@@ -5,14 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ratikesh Gaonkar</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Home-page specific ── */
+
+    /* Large italic tagline */
+    .home-tagline {
+      font-size: 2.35rem;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin: 56px 0 52px;
+      line-height: 1.2;
+    }
+
+    /* Two-column: text left, photo right */
+    .home-body {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 0 60px;
+      align-items: start;
+    }
+
+    .home-text p {
+      font-size: 1.05rem;
+      color: #222;
+      margin: 0 0 1.3rem;
+      line-height: 1.75;
+    }
+
+    .home-text p:last-child { margin-bottom: 0; }
+
+    /* Circular photo */
+    .home-photo {
+      margin-top: 8px;
+    }
+
+    .home-photo img {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(100%);
+    }
+
+    /* Placeholder circle when no photo */
+    .home-photo-placeholder {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #bbb;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 700px) {
+      .home-tagline { font-size: 1.6rem; margin: 36px 0 32px; }
+      .home-body { grid-template-columns: 1fr; }
+      .home-photo { order: -1; margin-bottom: 28px; }
+      .home-photo-placeholder, .home-photo img { width: 160px; height: 160px; max-width: 160px; }
+    }
+  </style>
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap">
-      <a href="index.html" class="site-logo-text">Ratikesh Gaonkar</a>
+      <a href="index.html" class="site-name">Ratikesh Gaonkar</a>
       <nav class="site-nav">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="work.html">Work</a>
         <a href="blog.html">Blog</a>
         <a href="releases.html">Releases</a>
@@ -22,16 +89,43 @@
 
   <main class="page-content">
     <div class="wrap">
-      <h1 class="home-name">Ratikesh Gaonkar</h1>
-      <p class="home-subtitle">
-        Developer / tinkerer / builder.<br />
-        I like building software and experimenting with technology.
-      </p>
-      <nav class="home-nav">
-        <a href="work.html">Work</a>
-        <a href="blog.html">Blog</a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
-      </nav>
+
+      <!-- Italic tagline -->
+      <p class="home-tagline">Developer&thinsp;/&thinsp;Tinkerer&thinsp;/&thinsp;Builder</p>
+
+      <!-- Text + photo -->
+      <div class="home-body">
+
+        <div class="home-text">
+          <p>I am a Salesforce developer and a tinkerer.</p>
+
+          <p>
+            I completed my B.E. in Information Technology from the International
+            Institute of Information Technology in 2022, where I developed a strong
+            foundation in software development and problem solving.
+          </p>
+
+          <p>
+            I currently work as a <strong>Salesforce and Conga Consultant</strong> at
+            PinkSamurais Pvt Ltd, having previously worked at
+            <a href="#">Accenture</a> and <a href="#">Cognizant</a>,
+            building scalable CLM and automation solutions on the Salesforce platform.
+          </p>
+
+          <p>
+            I am a <strong>Certified Platform Developer 1</strong> and a
+            <strong>Certified JavaScript Developer</strong>. Outside of work I enjoy
+            experimenting with new technologies and building small, useful tools.
+          </p>
+        </div>
+
+        <div class="home-photo">
+          <!-- Replace src with your actual photo path -->
+          <div class="home-photo-placeholder">your photo here</div>
+        </div>
+
+      </div>
+
     </div>
   </main>
 
