@@ -1,44 +1,37 @@
-/* ─── Reset ─── */
+/* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
-  color: #333;
+  color: #222;
   background: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: #c0392b;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 code {
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.9em;
-  background: #f5f5f5;
-  padding: 1px 4px;
-  border-radius: 2px;
+  font-size: 0.92em;
 }
 
-/* ─── Layout wrapper ─── */
+/* ── Outer wrap ── */
 .wrap {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 48px;
 }
 
-/* ─── Site header ─── */
+/* ────────────────────────────────
+   HEADER  —  name left · nav right
+   ──────────────────────────────── */
 .site-header {
-  padding: 28px 0 20px;
-  margin-bottom: 8px;
+  padding: 32px 0 28px;
 }
 
 .site-header .wrap {
@@ -47,176 +40,166 @@ code {
   justify-content: space-between;
 }
 
-.site-logo {
-  display: block;
-  line-height: 1;
-}
-
-.site-logo img {
-  height: 28px;
-  width: auto;
-  display: block;
-}
-
-/* Fallback text logo when no image */
-.site-logo-text {
-  font-size: 1.1rem;
-  font-weight: 700;
+/* Big bold name */
+.site-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: #111;
   text-decoration: none;
-  letter-spacing: -0.01em;
+  line-height: 1;
 }
-.site-logo-text:hover { text-decoration: none; color: #111; }
+.site-name:hover { text-decoration: none; color: #111; }
 
-/* ─── Main nav ─── */
+/* Nav */
 .site-nav {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 32px;
 }
 
 .site-nav a {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-family: Georgia, serif;
-  color: #111;
-  text-decoration: none;
   font-weight: 400;
+  color: #c0392b;          /* orange by default */
+  text-decoration: none;
 }
 
-.site-nav a:hover,
+/* Active / current page = black */
 .site-nav a.active {
-  color: #c0392b;
+  color: #111;
+  font-weight: 700;
 }
 
-/* ─── Page content ─── */
+.site-nav a:hover { text-decoration: underline; }
+
+/* ────────────────────────────────
+   PAGE CONTENT
+   ──────────────────────────────── */
 .page-content {
-  padding: 48px 0 80px;
+  padding: 56px 0 100px;
 }
 
-/* ─── Typography ─── */
-h1 {
-  font-size: 2.5rem;
+/* ── Big light page title  (e.g. "Personal projects") ── */
+h1.page-title {
+  font-size: 3rem;
+  font-weight: 400;           /* light weight like the screenshot */
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #111;
+  margin: 0 0 0.45rem 0;
+}
+
+/* Sub-intro paragraph */
+p.page-intro {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 3.5rem 0;
+}
+
+/* ── Section heading  "Projects on GitHub" ── */
+h2.section-heading {
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.025em;
-  margin: 0 0 0.4rem 0;
-  line-height: 1.15;
   color: #111;
+  margin: 0 0 1.4rem 0;
+  line-height: 1.2;
 }
 
-h2 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  margin: 2.5rem 0 1rem 0;
-  color: #111;
-}
-
-h2 a {
+/* The linked word inside h2 is large + underlined orange */
+h2.section-heading a {
   color: #c0392b;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
+  font-size: inherit;
 }
 
-p {
-  margin: 0 0 1rem 0;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* ─── GitHub project list (3-col grid) ─── */
-.gh-list {
+/* ────────────────────────────────
+   3-COLUMN PROJECT ROW LIST
+   col1: date  col2: name  col3: description
+   ──────────────────────────────── */
+.proj-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 3rem 0;
+  margin: 0 0 4rem 0;
 }
 
-.gh-list li {
+.proj-list li {
   display: grid;
-  grid-template-columns: 90px 160px 1fr;
-  gap: 0 0;
-  padding: 11px 0;
-  border-top: 1px solid #ebebeb;
+  grid-template-columns: 110px 190px 1fr;
   align-items: start;
+  padding: 16px 0;
+  border-top: 1px solid #e6e6e6;
 }
 
-.gh-list li:last-child {
-  border-bottom: 1px solid #ebebeb;
+.proj-list li:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.gh-date {
-  font-size: 0.85rem;
+.proj-date {
+  font-size: 0.92rem;
   color: #aaa;
   padding-top: 1px;
-  white-space: nowrap;
 }
 
-.gh-name a {
-  font-size: 0.9rem;
+.proj-name a {
+  font-size: 0.95rem;
   color: #c0392b;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.proj-name a:hover { color: #96281b; }
 
-.gh-name a:hover { color: #96281b; }
-
-.gh-desc {
-  font-size: 0.9rem;
-  color: #444;
-  line-height: 1.55;
+.proj-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* ─── Work / experience sections ─── */
-.section-block {
-  margin-bottom: 3.2rem;
-}
+/* ────────────────────────────────
+   WORK PAGE — extra sections
+   ──────────────────────────────── */
+.section-block { margin-bottom: 3.5rem; }
 
 /* Contact bar */
 .contact-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 28px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
   font-size: 0.875rem;
-  color: #777;
-  font-family: Georgia, serif;
+  color: #888;
 }
 .contact-bar a { color: #c0392b; }
 
 /* Summary bullets */
-.summary-list {
-  list-style: disc;
-  padding-left: 1.15rem;
-  margin: 0;
-}
-.summary-list li {
-  font-size: 0.9rem;
-  color: #444;
-  margin-bottom: 5px;
-  line-height: 1.65;
-}
+.summary-list { list-style: disc; padding-left: 1.2rem; margin: 0; }
+.summary-list li { font-size: 0.9rem; color: #444; margin-bottom: 5px; line-height: 1.65; }
 
-/* Experience entries */
+/* Experience list */
 .exp-list { list-style: none; padding: 0; margin: 0; }
-.exp-list > li { padding: 18px 0; border-top: 1px solid #ebebeb; }
-.exp-list > li:last-child { border-bottom: 1px solid #ebebeb; }
+.exp-list > li { padding: 18px 0; border-top: 1px solid #e6e6e6; }
+.exp-list > li:last-child { border-bottom: 1px solid #e6e6e6; }
 
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 12px;
-  margin-bottom: 5px;
   flex-wrap: wrap;
+  margin-bottom: 4px;
 }
-
 .exp-title { font-size: 0.95rem; font-weight: 700; color: #111; }
 .exp-company { color: #c0392b; font-weight: 400; }
-.exp-date { font-size: 0.82rem; color: #aaa; white-space: nowrap; flex-shrink: 0; }
+.exp-date { font-size: 0.82rem; color: #aaa; white-space: nowrap; }
 
-.exp-bullets { margin: 6px 0 0 0; padding: 0 0 0 1.1rem; list-style: disc; }
+.exp-bullets { margin: 6px 0 0; padding-left: 1.1rem; list-style: disc; }
 .exp-bullets li { font-size: 0.88rem; color: #555; margin-bottom: 4px; line-height: 1.6; }
 
 /* Education */
-.edu-entry { padding: 14px 0; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+.edu-entry { padding: 14px 0; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
 .edu-degree { font-size: 0.92rem; font-weight: 600; color: #111; }
 .edu-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 2px; }
 .edu-school { font-size: 0.88rem; color: #666; }
@@ -224,67 +207,53 @@ p {
 
 /* Skills */
 .skills-list { list-style: none; padding: 0; margin: 0; }
-.skills-list li { padding: 10px 0; border-top: 1px solid #ebebeb; font-size: 0.88rem; color: #555; line-height: 1.6; }
-.skills-list li:last-child { border-bottom: 1px solid #ebebeb; }
+.skills-list li { padding: 10px 0; border-top: 1px solid #e6e6e6; font-size: 0.88rem; color: #555; line-height: 1.6; }
+.skills-list li:last-child { border-bottom: 1px solid #e6e6e6; }
 .skill-label { font-weight: 700; color: #111; }
 
-/* ─── Home page ─── */
-.home-name {
-  font-size: 2.5rem;
+/* ────────────────────────────────
+   HOME PAGE
+   ──────────────────────────────── */
+.home-title {
+  font-size: 3rem;
   font-weight: 400;
-  letter-spacing: -0.025em;
-  margin: 0 0 0.8rem 0;
+  letter-spacing: -0.03em;
   color: #111;
+  margin: 0 0 0.8rem;
+  line-height: 1.1;
 }
 
 .home-subtitle {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   color: #666;
-  max-width: 500px;
-  margin: 0 0 2rem 0;
+  max-width: 480px;
+  margin: 0 0 2rem;
   line-height: 1.7;
 }
 
-.home-nav {
-  display: flex;
-  gap: 18px;
-}
-
-.home-nav a {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #111;
-  text-decoration: none;
-}
-
+.home-nav { display: flex; gap: 20px; }
+.home-nav a { font-size: 0.92rem; font-weight: 700; color: #111; }
 .home-nav a:hover { text-decoration: underline; }
 
-/* ─── Back link ─── */
-.back-link { font-size: 0.88rem; color: #888; }
+/* Back link */
+.back-link { font-size: 0.88rem; color: #aaa; }
 .back-link:hover { color: #333; text-decoration: underline; }
 
-/* ─── Footer ─── */
+/* Footer */
 .site-footer {
-  border-top: 1px solid #ebebeb;
-  padding: 20px 0 32px;
-  font-size: 0.8rem;
-  color: #bbb;
+  border-top: 1px solid #e6e6e6;
+  padding: 18px 0 30px;
+  font-size: 0.78rem;
+  color: #ccc;
 }
 
-/* ─── Responsive ─── */
-@media (max-width: 600px) {
-  .wrap { padding: 0 18px; }
-
-  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 10px; }
-
-  h1, .home-name { font-size: 1.9rem; }
-  h2 { font-size: 1.25rem; }
-
-  .gh-list li {
-    grid-template-columns: 75px 1fr;
-    grid-template-rows: auto auto;
-  }
-  .gh-desc { grid-column: 2; }
-
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .wrap { padding: 0 20px; }
+  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 12px; }
+  h1.page-title, .home-title { font-size: 2rem; }
+  h2.section-heading { font-size: 1.4rem; }
+  .proj-list li { grid-template-columns: 80px 1fr; grid-template-rows: auto auto; }
+  .proj-desc { grid-column: 2; }
   .exp-header { flex-direction: column; gap: 2px; }
 }
