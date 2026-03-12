@@ -1,0 +1,64 @@
+body{
+font-family: Georgia, serif;
+background:#ffffff;
+color:#222;
+margin:0;
+line-height:1.6;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+padding:60px 20px;
+}
+
+h1{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.intro{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.nav{
+list-style:none;
+padding:0;
+}
+
+.nav li{
+margin:8px 0;
+}
+
+.nav a{
+text-decoration:none;
+color:#000;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+.work-list{
+list-style:none;
+padding:0;
+}
+
+.work-list li{
+margin-bottom:20px;
+}
+
+.work-list a{
+font-weight:bold;
+text-decoration:none;
+color:#000;
+}
+
+.work-list a:hover{
+text-decoration:underline;
+}
+
+.back{
+margin-top:40px;
+}
