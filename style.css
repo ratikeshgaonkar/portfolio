@@ -235,8 +235,7 @@ h2.section-heading a {
 }
 
 /* Body paragraphs — large, airy */
-.home-text p {
-  font-size: 1rem;         /* 20px base */
+.home-text p {       /* 20px base */
   color: #333;
   margin: 0 0 1.5rem;
   line-height: 1.4em;
