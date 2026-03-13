@@ -73,7 +73,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #1a73e8;
+    color: #ff3300;
 }
 
 .hamburger {
@@ -123,7 +123,7 @@ body {
 }
 
 .highlight {
-    color: #1a73e8;
+    color: #ff3300;
     background: none;
     -webkit-text-fill-color: unset;
 }
@@ -162,12 +162,12 @@ body {
 }
 
 .btn-primary {
-    background: #1a73e8;
+    background: #ff3300;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1558b0;
+    background: #cc2900;
 }
 
 .btn-secondary {
@@ -196,7 +196,7 @@ body {
 }
 
 .contact-item i {
-    color: #1a73e8;
+    color: #ff3300;
     width: 14px;
 }
 
@@ -206,7 +206,7 @@ body {
 }
 
 .contact-item a:hover {
-    color: #1a73e8;
+    color: #ff3300;
 }
 
 .hero-image {
@@ -260,7 +260,7 @@ section {
     content: '';
     width: 40px;
     height: 3px;
-    background: #1a73e8;
+    background: #ff3300;
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -308,7 +308,7 @@ section {
 
 .highlight-item i {
     font-size: 1.4rem;
-    color: #1a73e8;
+    color: #ff3300;
     flex-shrink: 0;
 }
 
@@ -354,9 +354,9 @@ section {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #1a73e8;
+    background: #ff3300;
     border: 3px solid white;
-    box-shadow: 0 0 0 3px #d2e3fc;
+    box-shadow: 0 0 0 3px #ffd5cc;
     z-index: 1;
 }
 
@@ -365,7 +365,7 @@ section {
     padding: 1.5rem 1.75rem;
     border-radius: 8px;
     border: 1px solid #e8e8e8;
-    border-left: 3px solid #1a73e8;
+    border-left: 3px solid #ff3300;
 }
 
 .timeline-content h3 {
@@ -376,7 +376,7 @@ section {
 }
 
 .timeline-content h4 {
-    color: #1a73e8;
+    color: #ff3300;
     font-size: 0.95rem;
     font-weight: 500;
     margin-bottom: 0.25rem;
@@ -415,7 +415,7 @@ section {
     content: '›';
     position: absolute;
     left: 0;
-    color: #1a73e8;
+    color: #ff3300;
     font-size: 1rem;
     line-height: 1.65;
 }
@@ -442,11 +442,11 @@ section {
 .technologies {
     margin-top: 1.25rem;
     padding: 0.75rem 1rem;
-    background: #f0f4ff;
+    background: #fff4f2;
     border-radius: 6px;
     font-size: 0.85rem;
     color: #444;
-    border-left: 3px solid #1a73e8;
+    border-left: 3px solid #ff3300;
 }
 
 /* ============================================
@@ -489,18 +489,18 @@ section {
 }
 
 .skill-tag {
-    background: #f0f4ff;
-    color: #1a73e8;
+    background: #fff4f2;
+    color: #ff3300;
     padding: 0.35rem 0.8rem;
     border-radius: 4px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid #d2e3fc;
+    border: 1px solid #ffd5cc;
     transition: background 0.2s ease;
 }
 
 .skill-tag:hover {
-    background: #d2e3fc;
+    background: #ffd5cc;
 }
 
 /* ============================================
@@ -534,7 +534,7 @@ section {
 }
 
 .education-item h4 {
-    color: #1a73e8;
+    color: #ff3300;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
@@ -608,7 +608,7 @@ section {
 
 .contact-method i {
     font-size: 1.1rem;
-    color: #1a73e8;
+    color: #ff3300;
     width: 24px;
     text-align: center;
 }
@@ -621,7 +621,7 @@ section {
 }
 
 .contact-method a {
-    color: #1a73e8;
+    color: #ff3300;
     text-decoration: none;
     font-size: 0.85rem;
 }
@@ -657,7 +657,7 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #1a73e8;
+    border-color: #ff3300;
     background: #fff;
 }
 
@@ -706,7 +706,7 @@ section {
 }
 
 .social-links a:hover {
-    color: #1a73e8;
+    color: #ff3300;
 }
 
 .footer-bottom {
@@ -877,13 +877,6 @@ section {
 /* ============================================
    ANIMATIONS — subtle fade only
    ============================================ */
-/* Hero content must always be visible */
-.hero-title, .hero-subtitle, .hero-description,
-.hero-buttons, .hero-contact, .hero-image, .profile-image {
-    opacity: 1 !important;
-    transform: none !important;
-}
-
 .section-title {
     opacity: 0;
     transform: translateY(16px);
