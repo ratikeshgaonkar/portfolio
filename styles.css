@@ -15,7 +15,10 @@ html {
 body {
     font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
     line-height: 1.6;
-    background-color: #f4f5f7;
+    background-color: #ffffff;
+    border-left: 6px solid #e0e0e0;
+    border-right: 6px solid #e0e0e0;
+    min-height: 100vh;
 }
 
 .container {
