@@ -132,13 +132,13 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 1rem;
-    color: #555;
+    color: #444;
 }
 
 .hero-description {
     font-size: 0.95rem;
     margin-bottom: 1.75rem;
-    color: #666;
+    color: #555;
     line-height: 1.7;
     max-width: 560px;
 }
@@ -877,6 +877,13 @@ section {
 /* ============================================
    ANIMATIONS — subtle fade only
    ============================================ */
+/* Hero content must always be visible */
+.hero-title, .hero-subtitle, .hero-description,
+.hero-buttons, .hero-contact, .hero-image, .profile-image {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 .section-title {
     opacity: 0;
     transform: translateY(16px);
