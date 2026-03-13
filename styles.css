@@ -6,6 +6,9 @@
     font-size: 20px;
     color: #333;
     font-weight: 400;
+    border-left: 6px solid #e0e0e0;
+    border-right: 6px solid #e0e0e0;
+    min-height: 100vh;
 }
 
 html {
@@ -16,9 +19,6 @@ body {
     font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
-    border-left: 6px solid #e0e0e0;
-    border-right: 6px solid #e0e0e0;
-    min-height: 100vh;
 }
 
 .container {
@@ -767,7 +767,7 @@ section {
     }
 
     .hero {
-        padding: 100px 0 48px;
+        padding: 130px 0 48px;
     }
 
     .hero-container {
