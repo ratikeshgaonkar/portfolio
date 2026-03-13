@@ -825,7 +825,10 @@ section {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -860,10 +863,26 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* ── HERO MOBILE FIX ── */
+    .hero {
+        min-height: 100vh;
+        padding: 110px 0 50px; /* increased top padding to clear fixed navbar */
+        align-items: flex-start;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+
+    /* Put text first, image second */
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
     }
 
     .hero-title {
@@ -941,11 +960,6 @@ section {
         padding: 0 15px;
     }
 
-    .hero {
-        min-height: 90vh;
-        padding: 80px 0 40px;
-    }
-
     section {
         padding: 60px 0;
     }
@@ -956,6 +970,10 @@ section {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -984,7 +1002,10 @@ section {
     }
 }
 
-/* Animations */
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1192,4 +1213,4 @@ section {
     html {
         scroll-behavior: smooth;
     }
-} 
+}
